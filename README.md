@@ -101,7 +101,7 @@ The most recent Vim(NeoVim) version is recommended, for space-vim has been speci
 #### one-line installer
 
 ```bash
-$ bash <(curl -fsSL https://raw.githubusercontent.com/liyizhuo/space-vim/master/install.sh)
+$ bash <(curl -fsSL https://raw.githubusercontent.com/liyz15/space-vim/master/install.sh)
 ```
 
 #### Makefile
