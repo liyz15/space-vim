@@ -30,7 +30,9 @@ let g:spacevim_layers = [
 function! UserInit()
 
   " Add your own plugin via Plug command.
-  Plug 'junegunn/seoul256.vim'
+  Plug 'arcticicestudio/nord-vim'
+  Plug 'jiangmiao/auto-pairs'
+
 
 endfunction
 
@@ -44,6 +46,12 @@ function! UserConfig()
   " Adding extras.
   " Uncomment the following line If you have installed the powerline fonts.
   " It is good for airline layer.
-  " let g:airline_powerline_fonts = 1
+  let g:airline_powerline_fonts = 1
+
+  colorscheme nord
+
+  " optional reset cursor on exit:
+  autocmd VimLeave * call system('printf "\e[5 q" > $TTY')
+
 
 endfunction
